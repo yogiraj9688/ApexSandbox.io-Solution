@@ -1,0 +1,6 @@
+public Integer diff(Integer a, Integer b) {
+    //code here
+    Integer sub = 0;
+    sub = (a - b);
+    return Math.abs(sub);
+}
