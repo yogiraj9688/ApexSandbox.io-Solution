@@ -1,0 +1,10 @@
+public Boolean isEndWithZero(Integer num){
+     //code here
+     Integer rem = Math.Mod(num , 10);
+     if(rem == 0)
+     {
+         return true;
+     }
+     return false;
+
+}
