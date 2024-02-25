@@ -3,14 +3,14 @@ public Integer rockPaperScissors(String player1, String player2) {
     Integer a=0,b=1,c=2;
     if(player1 == 'rock' && player2 == 'paper' || player1 == 'scissors' && player2 == 'rock')
     {
-        return c;
+        return intValue(c);
     }
     else if(player1 == 'scissors' && player2=='paper')
     {
-        return b;
+        return intValue(b);
     }
     else if(player1=='paper' && player2=='paper' || player1=='scissors' && player2=='scissors' || player1=='rock' && player2=='rock')
     {
-        return a;
+        return intValue(a);
     }
 }
