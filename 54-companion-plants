@@ -1,11 +1,15 @@
 public Boolean companionPlants(String plant1, String plant2) {
     //code here
-    if(plant1 == 'lettuce' && plant2 == 'cucmbers' || plant1 == 'lettuce' && plant2 == 'onions' || plant1 == 'onions' && plant2 == 'carrots' || plant1 == 'onions' && plant2 == 'tomatoes')
-    {
+    map<String,String> companionMap = new map<String,String>{
+        'cucumbers' => 'lettuce',
+        'onions' => 'lettuce',
+        'carrots' => 'onions',
+        'tomatoes' => 'onions'
+    };
+    if ((companionMap.get(plant1) == plant2) ||
+        (companionMap.get(plant2) == plant1)) {
         return true;
-    }
-    else
-    {
+    } else {
         return false;
     }
 }
