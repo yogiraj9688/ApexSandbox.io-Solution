@@ -1,0 +1,16 @@
+public String formatName(String firstName, String lastName) {
+    //code here
+    if(firstName == ' ')
+    {
+        return lastName;
+    }
+    if(lastName == ' ')
+    {
+        return firstName;
+    }
+    if(firstName == ' ' && lastName == ' ')
+    {
+        return ' ';
+    }
+    return firstName +','+' '+ lastName;
+}
