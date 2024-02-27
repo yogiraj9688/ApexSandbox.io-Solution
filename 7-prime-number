@@ -1,6 +1,6 @@
 public Boolean isPrime(Integer num) {
     //code here
-    for(Integer i = 2; i <= num; i++)
+    for(Integer i = 2; i < num; i++)
     {
         if(Math.Mod(num, i) == 0)
         {
