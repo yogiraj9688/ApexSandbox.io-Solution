@@ -12,5 +12,5 @@ public String formatName(String firstName, String lastName) {
     {
         return '';
     }
-    return lastName +','+' '+ firstName;
+    return lastName +','+''+ firstName;
 }
