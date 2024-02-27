@@ -8,9 +8,9 @@ public String formatName(String firstName, String lastName) {
     {
         return firstName;
     }
-    if(firstName == ' ' && lastName == ' ')
+    if(String.IsBlank(firstName) && String.IsBlank(lastName))
     {
         return '';
     }
-    return lastName +','+''+ firstName;
+    return lastName +', '+ firstName;
 }
