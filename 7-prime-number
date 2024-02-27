@@ -6,9 +6,6 @@ public Boolean isPrime(Integer num) {
         {
             return false;
         }
-        else
-        {
-            return true;
-        }
     }
+    return false;
 }
