@@ -10,7 +10,7 @@ public String formatName(String firstName, String lastName) {
     }
     if(firstName == ' ' && lastName == ' ')
     {
-        return ' ';
+        return '';
     }
     return lastName +','+' '+ firstName;
 }
