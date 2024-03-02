@@ -3,7 +3,7 @@ public Integer fibonacci(Integer n) {
     Integer temp = 0;
     Integer last = 1;
     Integer current = 1;
-    for(int i=3;i<=n;i++)
+    for(Integer i=3;i<=n;i++)
     {
         temp = current;
         current += last;
