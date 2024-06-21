@@ -5,12 +5,15 @@ public Id insertCourse(String name, String details, Integer credits) {
     course.apxio__Course_Details__c = details;
     if(credits >=1 && credits <=4)
     {
-        course.apxio__Credits__c = credits
+        course.apxio__Credits__c = credits;
+        insert course;
+        return Id;
     }
     else
     {
         course.apxio__Credits__c = null;
+        return null;
     }
-    insert course;
-    return Id;
+    
+    
 }
