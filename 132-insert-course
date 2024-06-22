@@ -3,17 +3,13 @@ public Id insertCourse(String name, String details, Integer credits) {
     apxio__Course__c course = new apxio__Course__c();
     course.Name = name;
     course.apxio__Course_Details__c = details;
-    if(credits >=1 && credits <=4)
+    String cred = String.valueOf(credits);
+    List<String> creditValues = new List<String>{'1','2','3','4'};
+    if(!creditValues.contains(cred))
     {
-        course.apxio__Credits__c = (String))credits;
-        insert course;
-        return Id;
-    }
-    else
-    {
-        //course.apxio__Credits__c = null;
         return null;
-    }
-    
-    
+    }    
+    course.apxio__Credits__c = credits;
+    INSERT course;
+    return course.Id;    
 }
