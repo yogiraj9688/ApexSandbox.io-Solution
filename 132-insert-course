@@ -4,12 +4,12 @@ public Id insertCourse(String name, String details, Integer credits) {
     course.Name = name;
     course.apxio__Course_Details__c = details;
     String cred = String.valueOf(credits);
-    List<String> creditValues = new List<String>{'1','2','3','4'};
-    if(!creditValues.contains(cred))
+    List<String> credValues = new List<String>{'1','2','3','4'};
+    if(!credValues.contains(cred))
     {
         return null;
-    }    
-    course.apxio__Credits__c = credits;
+    }  
+    course.apxio__Credits__c = cred;
     INSERT course;
     return course.Id;    
 }
