@@ -7,6 +7,6 @@ public String registerStudent(String name, String phone, String email) {
 
     insert stud;
     List<apxio__Student__c> studList = [SELECT Name, apxio__Email__c, apxio__Registration_Number__c 
-                                    from apxio__Student__c where apxio__Email__c IN : email]
+                                    from apxio__Student__c where Name=:name AND apxio__Email__c =: email]
     return studList[0].apxio__Registration_Number__c;
 }
