@@ -1,5 +1,9 @@
 public Boolean isTypeAccount(sObject record)
 {
     // code here
-    return instanceof(record) == 'Account' ? true : false;
+    if( record instanceof Account)
+    {
+        return true;
+    }
+    return false;
 }
