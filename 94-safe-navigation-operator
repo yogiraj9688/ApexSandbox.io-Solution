@@ -6,7 +6,7 @@ public String getAccountBillingCityWithSafeNavigation(List<Account> accounts){
        {
            if(acc.BillingCity != null && i = 0)
            {
-               return BillingCity;
+               return toUpperCase(BillingCity);
            }
            return null;
        }
