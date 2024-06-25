@@ -1,0 +1,14 @@
+public String getAccountBillingCityWithSafeNavigation(List<Account> accounts){
+   // Code here
+   if(!accounts.isEmpty())
+   {
+       for(Account acc : accounts)
+       {
+           if(acc.BillingCity != null && i = 0)
+           {
+               return BillingCity;
+           }
+           return null;
+       }
+   }
+}
