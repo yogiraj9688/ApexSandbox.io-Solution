@@ -2,13 +2,16 @@ public String getAccountBillingCityWithSafeNavigation(List<Account> accounts){
    // Code here
    if(!accounts.isEmpty())
    {
-       for(Account acc : accounts)
+       for(int i=0; i< accounts.size();i++)
        {
-           if(acc.BillingCity != null && i = 0)
+           if(accounts[0] != null)
            {
-               return toUpperCase(BillingCity);
+              return toUpperCase(accounts[0].BillingCity);
            }
-           return null;
+           else
+           {
+               return null;
+           }
        }
    }
 }
