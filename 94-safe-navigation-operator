@@ -4,14 +4,7 @@ public String getAccountBillingCityWithSafeNavigation(List<Account> accounts){
    {
        for(Integer i=0; i< accounts.size();i++)
        {
-           if(accounts[0] != null)
-           {
-              return toUpperCase(accounts[0].BillingCity);
-           }
-           else
-           {
-               return null;
-           }
+          return accounts[0].BillingCity?toUpperCase(accounts[0].BillingCity).null;
        }
    }
 }
