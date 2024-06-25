@@ -9,7 +9,7 @@ public List<Account> checkAccounts(List<Account> accounts)
     {
         if(String.isBlank(acc.BillingCity))
         {
-            throe new AccountException('Invalis BillingCity');
+            throw new AccountException('Invalis BillingCity');
         }
     }
     return accounts;
