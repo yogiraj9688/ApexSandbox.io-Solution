@@ -4,7 +4,7 @@ public List<sObject> getListOfsObject(List<Account> accounts, List<Contact> cont
     List<sObject> result = new List<sObject>();
     if(accounts != Null)
     {
-        result.addAll(account);
+        result.addAll(accounts);
     }
     if(contacts != Null)
     {
