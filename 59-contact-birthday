@@ -18,7 +18,7 @@ public Boolean isBirthday(Contact c) {
     else
     {
         return c.Birthdate.day() == System.today().day() &&
-               c.Birthdate.month() == System.Birthdate.month();
+               c.Birthdate.month() == System.today().month();
     }
 
 }
