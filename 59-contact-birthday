@@ -6,7 +6,7 @@ public Boolean isBirthday(Contact c) {
     Integer tDate = today.day();
     Integer tMonth = today.month();
 
-    if(bDate == tDate && bMonth == bDate)
+    if(bDate == tDate && bMonth == bDate && c.Birthdate < today.year())
     {
         return true;
     }
