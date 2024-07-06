@@ -1,6 +1,6 @@
 public Boolean isBirthday(Contact c) {
     //code here
-    Integer bDate = c.Birthdate.day();
+    /*Integer bDate = c.Birthdate.day();
     Integer bMonth = c.Birthdate.month();
     Date today = system.today();
     Integer tDate = today.day();
@@ -10,6 +10,15 @@ public Boolean isBirthday(Contact c) {
     {
         return true;
     }
-    return false;
+    return false;*/
+    if(c.Birthdate.year() > System.today().year())
+    {
+        return false;
+    }
+    else
+    {
+        return c.Birthdate.day() == System.today().day() &&
+               c.Birthdate.month() == System.Birthdate.month();
+    }
 
 }
