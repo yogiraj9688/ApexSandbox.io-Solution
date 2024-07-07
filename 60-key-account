@@ -12,7 +12,7 @@ public Boolean isKeyAccount(Account a) {
     {
         return true;
     }
-    else if(a.AnnualRevenue == 500000 && a.Industry == 'All others')
+    else if(a.AnnualRevenue == 500000)
     {
         return true;
     }
