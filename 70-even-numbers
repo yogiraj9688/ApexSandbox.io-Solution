@@ -2,7 +2,7 @@ public List<Integer> evenNumbers(Integer n) {
     //code here
     for(Integer i = 1; i<=n ;i++)
     {
-        evenNumbers.add(i*2);
+        evenNumbers.add(n*2);
     }
     return evenNumbers;
 }
