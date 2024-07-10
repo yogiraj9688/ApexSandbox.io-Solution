@@ -4,8 +4,8 @@ public static Integer findLargest(List<Integer> nums) {
     if(!nums.isEmpty())
     {
         Set<Integer> new_set = new Set<Integer>(nums);
-        new_set.sort();
         List<Integer> new_num = new List<Integer>(new_set);
+        new_num.sort();
         return new_num[new_num.size() - 1];
     }
 }
