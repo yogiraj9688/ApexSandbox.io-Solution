@@ -1,13 +1,19 @@
 public static Integer findLargest(List<Integer> nums) {
 	//code here
     Integer largest = nums[nums.size()-1];
-        for(Integer i=0;i<nums.size();i++)
-        {
-            if(nums[i]>largest)
-            {
-                largest = nums[i];
-            }
-        }
+    
+       Set<Integer> new_set = new Set<Integer>(nums);
+        List<Integer> new_num = new List<Integer>(new_set);
+        new_num.sort();
+        largest = new_num[new_num.size() - 1];
+        return largest;
+        //for(Integer i=0;i<nums.size();i++)
+        //{
+            //if(nums[i]>largest)
+            //{
+            //    largest = nums[i];
+            //}
+       // }
         return largest;
 
 }
