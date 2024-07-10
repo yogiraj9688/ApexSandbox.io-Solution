@@ -1,11 +1,12 @@
 public static Integer findLargest(List<Integer> nums) {
 	//code here
-    //Integer largest = 0;
+    Integer largest = 0;
     if(!nums.isEmpty())
     {
         Set<Integer> new_set = new Set<Integer>(nums);
         List<Integer> new_num = new List<Integer>(new_set);
         new_num.sort();
-        return new_num[new_num.size() - 1];
+        largest = new_num[new_num.size() - 1];
+        return largest;
     }
 }
