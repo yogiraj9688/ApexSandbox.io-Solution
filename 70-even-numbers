@@ -1,8 +1,9 @@
 public List<Integer> evenNumbers(Integer n) {
     //code here
+    List<Integer> evenNum = new List<Integer>();
     for(Integer i = 1; i<=n ;i++)
     {
-        evenNumbers.add(i*2);
+        evenNum.add(i*2);
     }
-    return evenNumbers;
+    return evenNum;
 }
