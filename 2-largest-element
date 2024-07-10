@@ -1,8 +1,8 @@
 public static Integer findLargest(List<Integer> nums) {
 	//code here
     Integer largest = nums[nums.size()-1];
-    if(!nums.isEmpty())
-    {
+    //if(!nums.isEmpty())
+    //{
        //Set<Integer> new_set = new Set<Integer>(nums);
         //List<Integer> new_num = new List<Integer>(new_set);
         //new_num.sort();
@@ -16,6 +16,6 @@ public static Integer findLargest(List<Integer> nums) {
             }
         }
         return largest;
-    }
+    //}
 
 }
