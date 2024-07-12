@@ -1,0 +1,9 @@
+public Decimal average(List<Decimal> numbers){
+    // your code here
+    Decimal sum = 0;
+    for(Integer i=o;i<numbers.size();i++)
+    {
+        sum += numbers[i];
+    }
+    return round(sum);
+}
