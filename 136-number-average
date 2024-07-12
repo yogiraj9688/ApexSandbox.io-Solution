@@ -5,5 +5,5 @@ public Decimal average(List<Decimal> numbers){
     {
         sum += numbers[i];
     }
-    return round(sum);
+    return sum.round();
 }
