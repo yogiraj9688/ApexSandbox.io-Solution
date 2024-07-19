@@ -1,0 +1,28 @@
+public boolean isSorted(List<Integer> numbers) {
+    //code here
+    if(isAscending(numbers) || isDescending(numbers))
+    {
+        return true;
+    }
+    return false;
+}
+
+public boolean isAscending(List<Integer> numbers)
+{
+    for(Integer i=0;i<numbers.size() - 1; i++)
+    {
+        if(numbers[i] > numbers[i+1])
+            return false;
+        return true;
+    }
+}
+
+public boolean isDescending(List<Integer> numbers)
+{
+    for(Integer i=0;i<numbers.size() - 1; i++)
+    {
+        if(numbers[i] < numbers[i+1])
+            return false;
+        return true;
+    }
+}
