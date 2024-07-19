@@ -1,13 +1,14 @@
 public List<String> orgNames(List<String> adjectives, List<String> animals) {
     //code here
-    List<String> org = new List<String>();
-    for(String adj: adjectives)
+    List<String> FinalName = new List<String>();
+    Integer i,j;
+    for(i=0;i<adjectives.size();i++)
     {
-        for(String ani : animals)
+        for(j=0;j<animals.size();j++)
         {
-            String modifyString = adj +' '+ ani;
-            org.add(modifyString);
+            FinalName.add(adjectives[i]+ '-' + animals[j]);
         }
     }
-    return org;
+    
+    return FinalName;
 }
