@@ -13,8 +13,8 @@ public boolean isAscending(List<Integer> numbers)
     {
         if(numbers[i] > numbers[i+1])
             return false;
-        return true;
     }
+    return true;
 }
 
 public boolean isDescending(List<Integer> numbers)
@@ -23,6 +23,6 @@ public boolean isDescending(List<Integer> numbers)
     {
         if(numbers[i] < numbers[i+1])
             return false;
-        return true;
     }
+    return true;
 }
