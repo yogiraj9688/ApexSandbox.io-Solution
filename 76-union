@@ -1,13 +1,7 @@
 public Set<Integer> setUnion(Set<Integer> set1, Set<Integer> set2) {
     //code here
     Set<Integer> newUnion = new Set<Integer>();
-    for(Integer i=0;i<set1.size();i++)
-    {
-        newUnion.add(set1[i]);
-    }
-    for(Integer i=0;i<set2.size();i++)
-    {
-        newUnion.add(set2[i]);
-    }
+    newUnion.addAll(set1);
+    newUnion.addAll(set2);
     return newUnion;
 }
