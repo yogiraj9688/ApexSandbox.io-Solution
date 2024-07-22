@@ -1,15 +1,35 @@
 public Boolean sameElements(List<Integer> nums1, List<Integer> nums2) {
     //code here
-    Boolean result = false;
-    for(Integer i=0;i<nums1.size();i++)
+    Set<Integer> numsSet1 = new Set<Integer>();
+    Set<Integer> numsSet2 = new Set<Integer>();
+
+    for(Integer num:nums1)
     {
-        for(Integer j=0;j<nums2.size();j++)
-        {
-            if(nums1[i] == nums2[j])
-            {
-                result = true;
-            }
-        }
+        numsSet1.add(num);
     }
-    return result;
+    for(Integer num:nums2)
+    {
+        numsSet2.add(num);
+    }
+    if(numsSet1.size()<=numsSet2.size())
+    {
+        for(Integer num:numsSet1)
+        {
+            if(!numsSet2.contains(num))
+            {
+                return false;
+            }
+        }   
+    }
+    else
+    {
+        for(Integer num:numsSet2)
+        {
+            if(!numsSet1.contains(num))
+            {
+                return false;
+            }
+        } 
+    }
+    return true;
 }
