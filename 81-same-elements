@@ -1,0 +1,15 @@
+public Boolean sameElements(List<Integer> nums1, List<Integer> nums2) {
+    //code here
+    Boolean result = false;
+    for(Integer i=0;i<nums1.size();i++)
+    {
+        for(Integer j=0;j<nums2.size();j++)
+        {
+            if(nums1[i] == nums2[j])
+            {
+                result = true;
+            }
+        }
+    }
+    return result;
+}
