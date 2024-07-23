@@ -1,0 +1,16 @@
+public Boolean containsDuplicates(List<Integer> nums) {
+    //code here
+    Set<Integer> final_set = new Set<Integer>();
+    Boolean flag=false;
+    for(Integer num : nums)
+    {
+        if(!final_set.contains(num))
+        {
+            final_set.add(num);
+        }
+        else{
+            flag = false;
+        }
+    }
+    return flag;
+}
