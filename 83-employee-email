@@ -2,10 +2,10 @@ public String employeeEmail(Map<String, String> employeeIdToEmail, String employ
     //code here
     if(employeeIdToEmail.contains(employeeId))
     {
-        return 'info@apexsandbox.io';
+        return employeeIdToEmail.get(employeeId);
     }
     else
     {
-        return employeeIdToEmail.get(employeeId);
+        return 'info@apexsandbox.io';
     }
 }
