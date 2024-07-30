@@ -14,5 +14,5 @@ public Map<String, Decimal> industrySummary(List<Account> accounts) {
             newIndustrySummary.put(acc.Industry, sum);
         }
    }
-   return sum;
+   return newIndustrySummary;
 }
